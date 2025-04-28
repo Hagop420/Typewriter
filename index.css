@@ -1,0 +1,30 @@
+#entry{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   min-height: 100vh;
+   font-size: 30px;
+}
+
+.imageX{
+   height: 300px;
+   display: block;
+}
+
+.flexer{
+   display: block !important;
+   color:red;
+   font-weight: bold;
+}
+.anim{
+   opacity: 0;
+   transform: translateY(-10px);
+   transition: .3s all ease-in-out;
+}
+
+
+.anim_appeared{
+   opacity: 1;
+   transform: translateY(0px);
+}
