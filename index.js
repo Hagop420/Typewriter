@@ -7,7 +7,6 @@ addEventListener('keydown', (e) => {
       recordedString.length++
       const audioCP = new Audio('https://www.fesliyanstudios.com/play-mp3/387')
       type_writer.innerHTML = recordedString
-      console.log(type_writer);
       audioCP.play()
       // animation
       const animation = document.querySelectorAll('.anim')
@@ -33,13 +32,10 @@ audioCP.play()
    if (!/^[a-zA-Z]$/.test(e.key)) {
       recordedString.length = 0
       const animation = document.querySelector('#entry')
-    
         animation.classList.add('anim_appeared')
       type_writer.innerHTML = 'Incorrect Key(s)'
       return
    }
-
-   console.log(recordedString.length);
    if (recordedString.length > 405) {
       type_writer.innerHTML = `<img class='imageX' src = 'https://www.freeiconspng.com/uploads/orange-error-icon-0.png' />`
       const el = document.createElement('span')
